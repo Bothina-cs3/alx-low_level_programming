@@ -5,7 +5,7 @@
  * Description: print all aplhabet letters q and e
  *
  * Return: Always 0 (success)
- */
+*/
 
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
 
 	while (ch <= 'z')
 	{
-		if (ch == 'e' || == 'q')
+		if (ch == 'e' || ch == 'q')
 			ch++;
 		putchar(ch);
 		ch++;
