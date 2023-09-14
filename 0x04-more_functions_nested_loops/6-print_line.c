@@ -2,7 +2,8 @@
 /**
  * print_line - print a a straight line
  *
- * @n: input
+ * @n: is the number of times the _ character
+ *	should be printed
  *
 */
 
@@ -11,11 +12,11 @@ void print_line(int n)
 	int lnchr;
 
 	if (n <= 0)
-		_putchar('\n')
+		_putchar('\n');
 	else
 	{
 		for (lnchr = 1; lnchr <= n; lnchr++)
-			_putchar(95);
+			_putchar('_');
 		_putchar('\n');
 	}
 }
