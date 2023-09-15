@@ -34,7 +34,7 @@ void largest_prime_factor(long int num)
 
 	/* first divide with the smallest prime number (two) */
 	while (num % 2 == 0)
-		num = num % 2;
+		num = num / 2;
 	/* num must be odd so we proceed to the next prime number (plus tow) */
 	for (prmNu = 3; prmNu <= _sqrt(num); primNu += 2)
 	{
