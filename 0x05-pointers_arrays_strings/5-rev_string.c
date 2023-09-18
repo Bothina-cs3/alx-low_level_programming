@@ -6,13 +6,13 @@
  *
 */
 
-rev_string(char *s)
+void rev_string(char *s)
 {
 	int l, i;
 	char pm;
 
 	/*find string length without null char*/
-	for (l = 0; s[]; != '\0'; ++l)
+	for (l = 0; s[l]; != '\0'; ++l)
 		;
 
 	/*swap the string by looping to half the string*/
@@ -20,6 +20,6 @@ rev_string(char *s)
 	{
 		pm = s[i];
 		s[i] = s[l - 1 - i]; /*-1 because the array starts from 0*/
-		s[l 1 - i] = pm;
+		s[l - 1 - i] = pm;
 	}
 }
