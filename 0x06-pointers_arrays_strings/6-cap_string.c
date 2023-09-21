@@ -33,6 +33,7 @@ int isDelimiter(char c)
  * @s: string input
  * Return: string
 */
+
 char *cap_string(char *s)
 {
 	char *ptr = s;
