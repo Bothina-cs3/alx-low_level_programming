@@ -2,40 +2,35 @@
 /**
  * print_buffer - unction that prints a buffer.
  * @b: pointer
- * @size: intger
+ * @size: int
 */
 
 void print_buffer(char *b, int size)
 {
-	int i, j;
-
-	i = 0;
-
-	while (i < size)
+	if (size <= 0)
 	{
-		printf("%08x: ", i)
-		for (j = i; j < i + 10; j++)
-		{
-			if (j < size)
-				printf("%02x", (unsigned char)b[j]);
-			else
-				printf(" ");
-			if (j % 2)
-				putchar(' ')
-
-		}
-		for (j = i; j < i + 10; j++)
-		{
-			if (j >= size)
-				break;
-			else if (b[j] >= ' ' && *(b + j) <= '~')
-				putchar(*(b + j));
-			else
-				putchar('.');
-		}
-		i += 10;
-		if (i < size)
-			putchar('\n');
+		printf("\n");
+		return;
 	}
-	putchar('\n')
+
+	for (int i = 0; i < size; i += 10)
+	{
+		printf("%08x ", i);
+
+	for (int j = i; j < i + 10 && j < size; j++)
+	{
+		printf("%02x ", (unsigned char)b[j]);
+
+		if (b[j] >= 32 && b[j] <= 126)
+		{
+			printf("%c", b[j]);
+		}
+		else
+		{
+			printf(".");
+		}
+	}
+
+		printf("\n");
+	}
 }
