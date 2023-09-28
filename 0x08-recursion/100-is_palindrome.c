@@ -1,4 +1,4 @@
-#includ "main.h"
+#include "main.h"
 /**
  * last_index - return the last index of string
  * @s: pointer the string
