@@ -13,8 +13,8 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0 || ptr == 0)
 		return (NULL);
-	while (szie--)
+	while (size--)
 		ptr[size] = c;
 
-	return (0);
+	return (ptr);
 }
