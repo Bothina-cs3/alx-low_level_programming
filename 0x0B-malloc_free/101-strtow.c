@@ -39,10 +39,10 @@ char **strtow(char *str)
 	n = wrdcnt(str);
 	if (n == 1)
 		return (NULL);
-	a = (**char)malloc(n * sizeof(*char));
+	a = (char **)malloc(n * sizeof(char *));
 	if (a == NULL)
 		return (NULL);
-	w[n - 1] = NULL;
+	a[n - 1] = NULL;
 	while (str[i])
 	{
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
