@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_opcodes print of a function
+ * print_opcodes - print opcodes of a function
  * @st: starting address
  * @d: end address
 */
