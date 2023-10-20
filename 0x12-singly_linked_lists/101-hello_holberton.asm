@@ -1,3 +1,7 @@
+;file: 101-hello_holberton.asm
+;Descrbation: Write a 64-bit program in assembly that prints Hello,
+;Holberton, followed by a new line.
+
 extern printf
 
 section .text
@@ -17,5 +21,5 @@ main:
 	ret
 
 	section .data
-		msg: db "Hello, Holberton, 0
+		msg: db "Hello, Holberton", 0
 		fmt: db "%s", 10, 0
