@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  * *find_listint_loop_fl - find aloop in linked list
  * @head: pointer
