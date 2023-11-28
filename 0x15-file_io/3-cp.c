@@ -33,7 +33,7 @@ int main(int ac, char *av[])
 		if (write(to_fp, buf, b) != b)
 		{
 			dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]);
-					exit(98);
+					exit(99);
 		}
 	}
 	if (b == -1)
